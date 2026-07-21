@@ -29,6 +29,8 @@
 
 .plato-imagen-contenedor {
   margin: 0.75rem 0.75rem 0;
+  overflow: hidden;
+  background: var(--carbon);
 }
 
 .plato-imagen {
@@ -36,7 +38,16 @@
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+  background: var(--carbon);
   border: 2px solid var(--cobre);
+
+  /* Oculta el ícono nativo roto y el texto alt si la imagen no carga,
+     dejando solo el fondo neutro dentro del borde de la tarjeta. */
+  color: transparent;
+  font-size: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .divisor-parrilla {
