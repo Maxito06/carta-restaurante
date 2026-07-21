@@ -1,0 +1,26 @@
+{
+  "restaurante": {
+    "nombre": "Nombre del Restaurante",
+    "logo": "assets/logo.png",
+    "descripcion": "Breve frase o slogan del restaurante"
+  },
+  "categorias": [
+    {
+      "id": "entradas",
+      "nombre": "Entradas",
+      "platos": [
+        {
+          "id": "e1",
+          "nombre": "Plato de ejemplo",
+          "descripcion": "Descripción breve del plato de ejemplo",
+          "precio": 18000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        }
+      ]
+    },
+    { "id": "fuertes", "nombre": "Fuertes", "platos": [] },
+    { "id": "bebidas", "nombre": "Bebidas", "platos": [] },
+    { "id": "postres", "nombre": "Postres", "platos": [] }
+  ]
+}
