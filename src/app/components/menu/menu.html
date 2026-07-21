@@ -1,21 +1,25 @@
 @if (cargando()) {
-  <p>Cargando menú...</p>
+  <div class="estado-mensaje">
+    <p>Cargando menú...</p>
+  </div>
 }
 
 @if (error()) {
-  <p>{{ error() }}</p>
+  <div class="estado-mensaje estado-mensaje--error">
+    <p>{{ error() }}</p>
+  </div>
 }
 
 @if (menuData(); as data) {
   <header class="menu-header">
     <img class="menu-header__logo" src="assets/logo.png" alt="Logo Carlos Pico Parrilla" />
-    <h1>{{ data.restaurante.nombre }}</h1>
-    <p>{{ data.restaurante.descripcion }}</p>
+    <h1 class="menu-header__nombre texto-brasa">{{ data.restaurante.nombre }}</h1>
+    <p class="menu-header__descripcion">{{ data.restaurante.descripcion }}</p>
   </header>
 
   <div class="divisor-parrilla"></div>
 
-  <nav class="categorias-nav">
+  <nav class="categorias-nav" aria-label="Categorías del menú">
     <ul>
       @for (categoria of data.categorias; track categoria.id) {
         <li>
@@ -25,23 +29,27 @@
     </ul>
   </nav>
 
-  @for (categoria of data.categorias; track categoria.id) {
-    <section [id]="categoria.id" class="categoria">
-      <h2>{{ categoria.nombre }}</h2>
+  <main class="menu-contenido">
+    @for (categoria of data.categorias; track categoria.id) {
+      <section [id]="categoria.id" class="categoria">
+        <h2 class="categoria__titulo"><span>{{ categoria.nombre }}</span></h2>
 
-      <div class="platos-grid">
-        @for (plato of categoria.platos; track plato.id) {
-          @if (plato.disponible) {
-            <a class="plato-card" [routerLink]="['/plato', plato.id]">
-              <img class="plato-card__imagen" [src]="plato.imagen" [alt]="plato.nombre" />
-              <div class="plato-card__info">
-                <span class="plato-card__nombre">{{ plato.nombre }}</span>
-                <span class="plato-card__precio">{{ plato.precio | currency:'COP':'symbol':'1.0-0' }}</span>
-              </div>
-            </a>
+        <div class="platos-grid">
+          @for (plato of categoria.platos; track plato.id) {
+            @if (plato.disponible) {
+              <a class="plato-card" [routerLink]="['/plato', plato.id]">
+                <div class="plato-card__imagen-contenedor">
+                  <img class="plato-card__imagen" [src]="plato.imagen" [alt]="plato.nombre" />
+                </div>
+                <div class="plato-card__info">
+                  <span class="plato-card__nombre">{{ plato.nombre }}</span>
+                  <span class="plato-card__precio">{{ plato.precio | currency:'COP':'symbol':'1.0-0' }}</span>
+                </div>
+              </a>
+            }
           }
-        }
-      </div>
-    </section>
-  }
+        </div>
+      </section>
+    }
+  </main>
 }

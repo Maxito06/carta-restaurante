@@ -15,6 +15,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -22,26 +26,54 @@ body {
 }
 
 body {
-  background: var(--carbon);
+  background:
+    radial-gradient(ellipse 800px 400px at 50% 0%, rgba(200, 74, 44, 0.12), transparent 60%),
+    var(--carbon);
+  background-attachment: fixed;
   color: var(--hueso);
   font-family: var(--font-body);
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--font-display);
+  font-weight: 400;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 
+::selection {
+  background: var(--brasa);
+  color: var(--hueso);
+}
+
+:focus-visible {
+  outline: 2px solid var(--cobre);
+  outline-offset: 2px;
+}
+
+.texto-brasa {
+  color: var(--cobre);
+  background: linear-gradient(180deg, var(--cobre) 0%, var(--brasa) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Divisor decorativo: simula una parrilla de asado vista desde arriba,
+   con barras de cobre y un resplandor de brasa asomando entre ellas. */
 .divisor-parrilla {
-  height: 12px;
-  background: repeating-linear-gradient(
-    to bottom,
-    var(--cobre) 0,
-    var(--cobre) 2px,
-    transparent 2px,
-    transparent 6px
-  );
+  height: 14px;
+  background:
+    radial-gradient(ellipse 70% 100% at 50% 50%, rgba(200, 74, 44, 0.45), transparent 75%),
+    repeating-linear-gradient(
+      to right,
+      var(--cobre) 0,
+      var(--cobre) 3px,
+      transparent 3px,
+      transparent 12px
+    );
 }

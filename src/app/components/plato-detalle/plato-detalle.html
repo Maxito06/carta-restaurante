@@ -8,7 +8,7 @@
   }
 
   @if (error()) {
-    <div class="estado-mensaje">
+    <div class="estado-mensaje estado-mensaje--error">
       <p>{{ error() }}</p>
     </div>
   }
@@ -18,9 +18,14 @@
       <div class="plato-imagen-contenedor">
         <img class="plato-imagen" [src]="p.imagen" [alt]="p.nombre" />
       </div>
-      <h1 class="plato-nombre">{{ p.nombre }}</h1>
-      <p class="plato-descripcion">{{ p.descripcion }}</p>
-      <p class="plato-precio">{{ p.precio | currency:'COP':'symbol':'1.0-0' }}</p>
+
+      <div class="divisor-parrilla"></div>
+
+      <div class="plato-info">
+        <h1 class="plato-nombre">{{ p.nombre }}</h1>
+        <p class="plato-descripcion">{{ p.descripcion }}</p>
+        <p class="plato-precio">{{ p.precio | currency:'COP':'symbol':'1.0-0' }}</p>
+      </div>
     </article>
   } @else if (!cargando() && !error()) {
     <div class="estado-mensaje">
