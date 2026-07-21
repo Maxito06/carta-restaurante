@@ -1,26 +1,162 @@
 {
   "restaurante": {
-    "nombre": "Nombre del Restaurante",
+    "nombre": "Carlos Pico Parrilla",
     "logo": "assets/logo.png",
-    "descripcion": "Breve frase o slogan del restaurante"
+    "descripcion": "Comida típica - Todo al carbón",
+    "telefonos": ["3164393636", "3009803833"],
+    "domicilio": true,
+    "notaGeneral": "Todos los platos van acompañados de papa, yuca al vapor y ají"
   },
   "categorias": [
     {
-      "id": "entradas",
-      "nombre": "Entradas",
+      "id": "picadas",
+      "nombre": "Picadas",
       "platos": [
         {
-          "id": "e1",
-          "nombre": "Plato de ejemplo",
-          "descripcion": "Descripción breve del plato de ejemplo",
-          "precio": 18000,
+          "id": "picada-mixta",
+          "nombre": "Picadas",
+          "descripcion": "Carne de res, cerdo sobrebarriga, chorizo, chunchulla y maduro asado",
+          "precio": 25000,
           "imagen": "assets/menu/placeholder.jpg",
           "disponible": true
         }
       ]
     },
-    { "id": "fuertes", "nombre": "Fuertes", "platos": [] },
-    { "id": "bebidas", "nombre": "Bebidas", "platos": [] },
-    { "id": "postres", "nombre": "Postres", "platos": [] }
+    {
+      "id": "carnes-parrilla",
+      "nombre": "Carnes a la parrilla",
+      "platos": [
+        {
+          "id": "lomo-cerdo",
+          "nombre": "Lomo de cerdo",
+          "descripcion": "250 gramos de carne de cerdo y chorizo",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "punta-anca",
+          "nombre": "Punta de anca",
+          "descripcion": "250 gramos de carne de res y chorizo",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "entranita",
+          "nombre": "Entrañita",
+          "descripcion": "250 gramos de carne de res y chorizo",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "carne-oreada-res",
+          "nombre": "Carne oreada res",
+          "descripcion": "250 gramos de carne de res y chorizo",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "mixto-res-cerdo",
+          "nombre": "Mixto res y cerdo",
+          "descripcion": "250 gramos de carne de res, cerdo y chorizo",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "cabro-pepitoria",
+          "nombre": "Cabro con pepitoria",
+          "descripcion": "450 gramos de cabro con porción de pepitoria",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "pechuga",
+          "nombre": "Pechuga",
+          "descripcion": "250 gramos de pechuga de pollo",
+          "precio": 15000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "pescados",
+      "nombre": "Pescados",
+      "platos": [
+        {
+          "id": "trucha-ajillo",
+          "nombre": "Trucha al ajillo",
+          "descripcion": "650 gramos de trucha",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "mojarra-rellena",
+          "nombre": "Mojarra rellena",
+          "descripcion": "650 gramos de mojarra rellena de hogao, chorizo y huevo",
+          "precio": 30000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "mojarra-asada",
+          "nombre": "Mojarra asada",
+          "descripcion": "650 gramos de mojarra",
+          "precio": 25000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "acompanantes",
+      "nombre": "Acompañantes",
+      "platos": [
+        {
+          "id": "mazorca-asada",
+          "nombre": "Mazorca asada",
+          "descripcion": "Bañada en salsa tártara, queso y salsas",
+          "precio": 10000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "chicharron-barril",
+          "nombre": "Chicharrón al barril",
+          "descripcion": "Acompañado de chorizo",
+          "precio": 12000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        },
+        {
+          "id": "porcion-pepitoria",
+          "nombre": "Porción de pepitoria",
+          "descripcion": "300 gramos de pepitoria",
+          "precio": 12000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        }
+      ]
+    },
+    {
+      "id": "sopas",
+      "nombre": "Sopas",
+      "platos": [
+        {
+          "id": "sopa-dia",
+          "nombre": "Sopa del día",
+          "descripcion": "Sopa del día, consulta con el mesero la preparación disponible",
+          "precio": 5000,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": true
+        }
+      ]
+    }
   ]
 }

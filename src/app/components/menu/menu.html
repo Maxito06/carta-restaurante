@@ -15,6 +15,19 @@
     <img class="menu-header__logo" src="assets/logo.png" alt="Logo Carlos Pico Parrilla" />
     <h1 class="menu-header__nombre texto-brasa">{{ data.restaurante.nombre }}</h1>
     <p class="menu-header__descripcion">{{ data.restaurante.descripcion }}</p>
+
+    @if (data.restaurante.notaGeneral) {
+      <p class="menu-header__nota">{{ data.restaurante.notaGeneral }}</p>
+    }
+
+    @if (data.restaurante.telefonos.length) {
+      <p class="menu-header__contacto">
+        @if (data.restaurante.domicilio) {
+          <span class="menu-header__contacto-label">Domicilios:</span>
+        }
+        {{ data.restaurante.telefonos.join(' / ') }}
+      </p>
+    }
   </header>
 
   <div class="divisor-parrilla"></div>

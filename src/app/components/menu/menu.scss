@@ -37,6 +37,28 @@
     opacity: 0.75;
     font-style: italic;
   }
+
+  &__nota {
+    max-width: 36ch;
+    margin-top: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--hueso);
+    opacity: 0.55;
+  }
+
+  &__contacto {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--cobre);
+  }
+
+  &__contacto-label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-right: 0.3rem;
+  }
 }
 
 .categorias-nav {

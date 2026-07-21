@@ -17,6 +17,9 @@ export interface Restaurante {
   nombre: string;
   logo: string;
   descripcion: string;
+  telefonos: string[];
+  domicilio: boolean;
+  notaGeneral: string;
 }
 
 export interface MenuData {
