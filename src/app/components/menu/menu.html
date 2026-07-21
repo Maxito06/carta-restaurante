@@ -1,1 +1,30 @@
-<p>menu works!</p>
+@if (cargando()) {
+  <p>Cargando menú...</p>
+}
+
+@if (error()) {
+  <p>{{ error() }}</p>
+}
+
+@if (menuData(); as data) {
+  <header>
+    <h1>{{ data.restaurante.nombre }}</h1>
+    <p>{{ data.restaurante.descripcion }}</p>
+  </header>
+
+  @for (categoria of data.categorias; track categoria.id) {
+    <section>
+      <h2>{{ categoria.nombre }}</h2>
+
+      @for (plato of categoria.platos; track plato.id) {
+        @if (plato.disponible) {
+          <a [routerLink]="['/plato', plato.id]">
+            <img [src]="plato.imagen" [alt]="plato.nombre" />
+            <span>{{ plato.nombre }}</span>
+            <span>{{ plato.precio | currency:'COP':'symbol':'1.0-0' }}</span>
+          </a>
+        }
+      }
+    </section>
+  }
+}
