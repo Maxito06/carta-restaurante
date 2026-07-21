@@ -22,11 +22,11 @@
   padding: 2rem 1.25rem 1.5rem;
 
   &__logo {
-    max-width: 128px;
+    max-width: clamp(180px, 45vw, 260px);
     width: 100%;
     height: auto;
-    margin-bottom: 0.75rem;
-    filter: drop-shadow(0 6px 18px rgba(200, 74, 44, 0.35));
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 8px 26px rgba(200, 74, 44, 0.45));
   }
 
   &__nombre {

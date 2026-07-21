@@ -17,7 +17,7 @@
           "nombre": "Picadas",
           "descripcion": "Carne de res, cerdo sobrebarriga, chorizo, chunchulla y maduro asado",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/picada-mixta.jpg",
           "disponible": true
         }
       ]
@@ -31,7 +31,7 @@
           "nombre": "Lomo de cerdo",
           "descripcion": "250 gramos de carne de cerdo y chorizo",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/lomo-cerdo.jpg",
           "disponible": true
         },
         {
@@ -39,7 +39,7 @@
           "nombre": "Punta de anca",
           "descripcion": "250 gramos de carne de res y chorizo",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/punta-anca.jpg",
           "disponible": true
         },
         {
@@ -47,7 +47,7 @@
           "nombre": "Entrañita",
           "descripcion": "250 gramos de carne de res y chorizo",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/entranita.jpg",
           "disponible": true
         },
         {
@@ -55,7 +55,7 @@
           "nombre": "Carne oreada res",
           "descripcion": "250 gramos de carne de res y chorizo",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/carne-oreada-res.jpg",
           "disponible": true
         },
         {
@@ -63,7 +63,7 @@
           "nombre": "Mixto res y cerdo",
           "descripcion": "250 gramos de carne de res, cerdo y chorizo",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/mixto-res-cerdo.jpg",
           "disponible": true
         },
         {
@@ -71,7 +71,7 @@
           "nombre": "Cabro con pepitoria",
           "descripcion": "450 gramos de cabro con porción de pepitoria",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/cabro-pepitoria.jpg",
           "disponible": true
         },
         {
@@ -79,7 +79,7 @@
           "nombre": "Pechuga",
           "descripcion": "250 gramos de pechuga de pollo",
           "precio": 15000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/pechuga.jpg",
           "disponible": true
         }
       ]
@@ -93,7 +93,7 @@
           "nombre": "Trucha al ajillo",
           "descripcion": "650 gramos de trucha",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/trucha-ajillo.jpg",
           "disponible": true
         },
         {
@@ -101,7 +101,7 @@
           "nombre": "Mojarra rellena",
           "descripcion": "650 gramos de mojarra rellena de hogao, chorizo y huevo",
           "precio": 30000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/mojarra-rellena.jpg",
           "disponible": true
         },
         {
@@ -109,7 +109,7 @@
           "nombre": "Mojarra asada",
           "descripcion": "650 gramos de mojarra",
           "precio": 25000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/mojarra-asada.jpg",
           "disponible": true
         }
       ]
@@ -123,7 +123,7 @@
           "nombre": "Mazorca asada",
           "descripcion": "Bañada en salsa tártara, queso y salsas",
           "precio": 10000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/mazorca-asada.jpg",
           "disponible": true
         },
         {
@@ -131,7 +131,7 @@
           "nombre": "Chicharrón al barril",
           "descripcion": "Acompañado de chorizo",
           "precio": 12000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/chicharron-barril.jpg",
           "disponible": true
         },
         {
@@ -139,7 +139,7 @@
           "nombre": "Porción de pepitoria",
           "descripcion": "300 gramos de pepitoria",
           "precio": 12000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/porcion-pepitoria.jpg",
           "disponible": true
         }
       ]
@@ -153,7 +153,7 @@
           "nombre": "Sopa del día",
           "descripcion": "Sopa del día, consulta con el mesero la preparación disponible",
           "precio": 5000,
-          "imagen": "assets/menu/placeholder.jpg",
+          "imagen": "assets/menu/sopa-dia.jpg",
           "disponible": true
         }
       ]
