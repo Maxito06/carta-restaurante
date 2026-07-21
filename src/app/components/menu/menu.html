@@ -7,24 +7,41 @@
 }
 
 @if (menuData(); as data) {
-  <header>
+  <header class="menu-header">
+    <img class="menu-header__logo" src="assets/logo.png" alt="Logo Carlos Pico Parrilla" />
     <h1>{{ data.restaurante.nombre }}</h1>
     <p>{{ data.restaurante.descripcion }}</p>
   </header>
 
+  <div class="divisor-parrilla"></div>
+
+  <nav class="categorias-nav">
+    <ul>
+      @for (categoria of data.categorias; track categoria.id) {
+        <li>
+          <a [href]="'#' + categoria.id">{{ categoria.nombre }}</a>
+        </li>
+      }
+    </ul>
+  </nav>
+
   @for (categoria of data.categorias; track categoria.id) {
-    <section>
+    <section [id]="categoria.id" class="categoria">
       <h2>{{ categoria.nombre }}</h2>
 
-      @for (plato of categoria.platos; track plato.id) {
-        @if (plato.disponible) {
-          <a [routerLink]="['/plato', plato.id]">
-            <img [src]="plato.imagen" [alt]="plato.nombre" />
-            <span>{{ plato.nombre }}</span>
-            <span>{{ plato.precio | currency:'COP':'symbol':'1.0-0' }}</span>
-          </a>
+      <div class="platos-grid">
+        @for (plato of categoria.platos; track plato.id) {
+          @if (plato.disponible) {
+            <a class="plato-card" [routerLink]="['/plato', plato.id]">
+              <img class="plato-card__imagen" [src]="plato.imagen" [alt]="plato.nombre" />
+              <div class="plato-card__info">
+                <span class="plato-card__nombre">{{ plato.nombre }}</span>
+                <span class="plato-card__precio">{{ plato.precio | currency:'COP':'symbol':'1.0-0' }}</span>
+              </div>
+            </a>
+          }
         }
-      }
+      </div>
     </section>
   }
 }

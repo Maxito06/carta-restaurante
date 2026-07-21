@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --carbon: #1A1512;
+  --brasa: #C84A2C;
+  --cobre: #D9A15C;
+  --hueso: #F2E8D8;
+  --humo: #0D0A08;
+  --fresco: #7A8B5C;
+  --font-display: 'Ultra', serif;
+  --font-body: 'Karla', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--carbon);
+  color: var(--hueso);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: 0.02em;
+}
+
+.divisor-parrilla {
+  height: 12px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--cobre) 0,
+    var(--cobre) 2px,
+    transparent 2px,
+    transparent 6px
+  );
+}
