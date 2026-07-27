@@ -64,6 +64,36 @@
   }
 }
 
+.whatsapp-boton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 44px;
+  margin-top: 1.1rem;
+  padding: 0 1.25rem;
+  color: var(--hueso);
+  background: var(--brasa);
+  border: 1px solid var(--brasa);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: var(--cobre);
+    border-color: var(--cobre);
+    transform: translateY(-2px);
+  }
+
+  &__icono {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+  }
+}
+
 .categorias-nav {
   position: sticky;
   top: 0;

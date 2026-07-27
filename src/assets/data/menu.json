@@ -5,7 +5,8 @@
     "descripcion": "Comida típica - Todo al carbón",
     "telefonos": ["3164393636", "3009803833"],
     "domicilio": true,
-    "notaGeneral": "Todos los platos van acompañados de papa, yuca al vapor y ají"
+    "notaGeneral": "Todos los platos van acompañados de papa, yuca al vapor y ají",
+    "whatsapp": "573164393636"
   },
   "categorias": [
     {

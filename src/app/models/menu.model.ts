@@ -20,6 +20,7 @@ export interface Restaurante {
   telefonos: string[];
   domicilio: boolean;
   notaGeneral: string;
+  whatsapp: string;
 }
 
 export interface MenuData {
