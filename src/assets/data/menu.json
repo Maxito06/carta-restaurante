@@ -157,6 +157,68 @@
           "disponible": true
         }
       ]
+    },
+    {
+      "id": "bebidas",
+      "nombre": "Bebidas",
+      "platos": [
+        {
+          "id": "gaseosa-personal",
+          "nombre": "Gaseosa personal",
+          "descripcion": "Gaseosa personal, sabores variados",
+          "precio": 0,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": false
+        },
+        {
+          "id": "gaseosa-litro",
+          "nombre": "Gaseosa litro",
+          "descripcion": "Gaseosa de 1 litro, sabores variados",
+          "precio": 0,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": false
+        },
+        {
+          "id": "gaseosa-mega",
+          "nombre": "Gaseosa mega",
+          "descripcion": "Gaseosa mega (2.5 litros), sabores variados",
+          "precio": 0,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": false
+        },
+        {
+          "id": "cerveza-aguila",
+          "nombre": "Cerveza Águila",
+          "descripcion": "Cerveza nacional Águila",
+          "precio": 0,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": false
+        },
+        {
+          "id": "cerveza-poker",
+          "nombre": "Cerveza Poker",
+          "descripcion": "Cerveza nacional Poker",
+          "precio": 0,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": false
+        },
+        {
+          "id": "jarra-limonada",
+          "nombre": "Jarra de limonada",
+          "descripcion": "Jarra de limonada natural",
+          "precio": 0,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": false
+        },
+        {
+          "id": "botella-agua",
+          "nombre": "Botella de agua",
+          "descripcion": "Agua en botella",
+          "precio": 0,
+          "imagen": "assets/menu/placeholder.jpg",
+          "disponible": false
+        }
+      ]
     }
   ]
 }
